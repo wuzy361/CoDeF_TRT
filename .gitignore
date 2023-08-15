@@ -29,13 +29,8 @@ ckpts/
 *.dat
 *.ckpt
 
-# Ignore media files.
-results/
-*.jpg
-*.png
-*.jpeg
-
 # Ignore log files.
+results/
 resources/
 events/
 profile/
