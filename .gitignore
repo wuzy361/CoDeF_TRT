@@ -34,9 +34,6 @@ results/
 *.jpg
 *.png
 *.jpeg
-# *.gif
-*.avi
-*.mp4
 
 # Ignore log files.
 resources/
