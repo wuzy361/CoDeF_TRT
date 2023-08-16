@@ -128,7 +128,7 @@ class VideoDataset(Dataset):
                 flow_tensor=flow_tensor.reshape(1,-1).transpose(1,0)
                 flow_tensor = flow_tensor.sum(dim=-1) < 0.05
                 self.all_flows[i][flow_tensor] = 5
-                i += 1
+                i += 1 
 
         if self.split == 'val':
             self.ref_idx = 0
