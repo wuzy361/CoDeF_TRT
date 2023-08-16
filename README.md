@@ -23,7 +23,7 @@ To use video visualizer, please install `ffmpeg` by:
 sudo apt-get install ffmpeg
 ```
 
-For additional python libraries, please install by:
+For additional Python libraries, please install by:
 
 ```
 pip install -r requirements.txt
@@ -62,8 +62,8 @@ CoDeF
     │
     └─── ...
 ```
-## Pretrained Checkpoints
-You can download the pre-trained checkpoints trained with current codebase as follows:
+## Pretrained checkpoints
+You can download the pre-trained checkpoints trained with the current codebase as follows:
 | Sequence Name | Config |                           Download                           |
 | :-------- | :----: | :----------------------------------------------------------: |
 | beauty_0 | configs/beauty_0/base.yaml |  [Google drive link](https://drive.google.com/file/d/11SWfnfDct8bE16802PyqYJqsU4x6ACn8/view?usp=sharing) |
@@ -98,7 +98,7 @@ CoDeF
 ./scripts/train_multi.sh
 ```
 where:
-* `GPU`: Decide which gpu to train on;
+* `GPU`: Decide which GPU to train on;
 * `NAME`: Name of the video sequence;
 * `EXP_NAME`: Name of the experiment;
 * `ROOT_DIRECTORY`: Directory of the input video sequence;
