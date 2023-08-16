@@ -131,7 +131,7 @@ The transferred results can be seen in `results/all_sequences/{NAME}/{EXP_NAME}_
 
 ```bibtex
 @misc{ouyang2023codef,
-      title={CoDeF: Content Deformation Fields for Temporally Consistent Video 	         Processing}, 
+      title={CoDeF: Content Deformation Fields for Temporally Consistent Video Processing}, 
       author={Hao Ouyang and Qiuyu Wang and Yuxi Xiao and Qingyan Bai and Juntao Zhang and Kecheng Zheng and Xiaowei Zhou and Qifeng Chen and Yujun Shen},
       year={2023},
       eprint={2308.07926},
