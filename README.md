@@ -1,4 +1,4 @@
-# CoDeF: Content Deformation Fields for Temporally Consistent Video Processing
+﻿# CoDeF: Content Deformation Fields for Temporally Consistent Video Processing
 
 <img src='docs/teaser.gif'></img>
 
@@ -130,15 +130,14 @@ The transferred results can be seen in `results/all_sequences/{NAME}/{EXP_NAME}_
 ### BibTeX
 
 ```bibtex
-@misc{ouyang2023codef,
+@article{ouyang2023codef,
       title={CoDeF: Content Deformation Fields for Temporally Consistent Video Processing}, 
       author={Hao Ouyang and Qiuyu Wang and Yuxi Xiao and Qingyan Bai and Juntao Zhang and Kecheng Zheng and Xiaowei Zhou and Qifeng Chen and Yujun Shen},
-      year={2023},
-      eprint={2308.07926},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+      journal={arXiv preprint arXiv:2308.07926},
+      year={2023}
 }
 ```
+
 
 
 
