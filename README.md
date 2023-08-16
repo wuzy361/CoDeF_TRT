@@ -37,7 +37,7 @@ for Pytorch extension install instructions.
 ## Data
 ### Our data
 Download our data from [this URL](https://drive.google.com/file/d/1cKZF6ILeokCjsSAGBmummcQh0uRGaC_F/view?usp=sharing), unzip the file and put it in the current directory. Some additional data can be downloaded from [here](https://rec.ustc.edu.cn/share/5d1e0bb0-31d7-11ee-aa60-d1fd6c62dfb4).
-### Customize your own data.
+### Customize your own data
 *To be released.*
 
 And organize files as follows:
@@ -126,3 +126,19 @@ Then run:
 The transferred results can be seen in `results/all_sequences/{NAME}/{EXP_NAME}_transformed`.
 
 *Note*: The `canonical_wh` option in the configuration file should be set with caution, usually a little larger than `img_wh`, as it determines the field of view of the canonical image.
+
+### BibTeX
+
+```bibtex
+@misc{ouyang2023codef,
+      title={CoDeF: Content Deformation Fields for Temporally Consistent Video 	         Processing}, 
+      author={Hao Ouyang and Qiuyu Wang and Yuxi Xiao and Qingyan Bai and Juntao Zhang and Kecheng Zheng and Xiaowei Zhou and Qifeng Chen and Yujun Shen},
+      year={2023},
+      eprint={2308.07926},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
+
+
+
