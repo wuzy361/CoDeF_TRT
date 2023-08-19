@@ -15,7 +15,8 @@ The codebase is tested on
 * Python 3.10
 * [PyTorch](https://pytorch.org/) 2.0.0
 * [PyTorch Lightning](https://www.pytorchlightning.ai/index.html) 2.0.2
-* 1 Nvidia GPU (RTX A6000 48GB) with CUDA version 11.7
+* 1 Nvidia GPU (RTX A6000 48GB) with CUDA version 11.7 
+(Other GPUs are also suitable, and 10GB of GPU memory is sufficient to run our code.)
 
 To use video visualizer, please install `ffmpeg` by:
 
