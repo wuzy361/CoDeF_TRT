@@ -43,7 +43,7 @@ We have provided some videos [here](https://drive.google.com/file/d/1cKZF6ILeokC
 
 ### Customize your own data
 
-*Stay tuned for dtat preparation scripts.*
+*Stay tuned for data preparation scripts.*
 
 Please organize your own data as follows:
 
