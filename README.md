@@ -39,7 +39,7 @@ for Pytorch extension install instructions.
 
 ### Provided data
 
-We have provided some videos [here](https://drive.google.com/file/d/1cKZF6ILeokCjsSAGBmummcQh0uRGaC_F/view?usp=sharing) for quick test. Please download and unzip the data and put them in the root directory. More videos can be downloaded [here](https://rec.ustc.edu.cn/share/5d1e0bb0-31d7-11ee-aa60-d1fd6c62dfb4).
+We have provided some videos [here](https://drive.google.com/file/d/1cKZF6ILeokCjsSAGBmummcQh0uRGaC_F/view?usp=sharing) for quick test. Please download and unzip the data and put them in the root directory. More videos can be downloaded [here](https://drive.google.com/file/d/10Msz37MpjZQFPXlDWCZqrcQjhxpQSvCI/view?usp=sharing).
 
 ### Customize your own data
 
