@@ -43,9 +43,23 @@ We have provided some videos [here](https://drive.google.com/file/d/1cKZF6ILeokC
 
 ### Customize your own data
 
-*Stay tuned for data preparation scripts.*
+We segement video sequences using [SAM-Track](https://github.com/z-x-yang/Segment-and-Track-Anything). Once you obtain the mask files, place them in the folder `all_sequences/{YOUR_SEQUENCE_NAME}/{YOUR_SEQUENCE_NAME}_masks`. Next, execute the following command:
 
-Please organize your own data as follows:
+```shell
+cd data_preprocessing
+python preproc_mask.py
+```
+
+We extract optical flows of video sequences using [RAFT](https://github.com/princeton-vl/RAFT). To get started, please follow the instructions provided [here](https://github.com/princeton-vl/RAFT#demos) to download their pretrained model. Once downloaded, place the model in the `data_preprocessing/RAFT/models` folder. After that, you can execute the following command:
+
+```shell
+cd data_preprocessing/RAFT
+./run_raft.sh
+```
+
+Remember to update the sequence name and root directory in both `data_preprocessing/preproc_mask.py` and `data_preprocessing/RAFT/run_raft.sh` accordingly.
+
+After obtaining the files, please organize your own data as follows:
 
 ```
 CoDeF
@@ -131,7 +145,7 @@ After running the script, the reconstructed videos can be found in `results/all_
 ## Test video translation
 
 After obtaining the canonical image through [this step](#anchor), use your preferred text prompts to transfer it using [ControlNet](https://github.com/lllyasviel/ControlNet).
-Once you have the transferred canonical image, place it in `all_sequences/${NAME}/${EXP_NAME}_control` (i.e. `CANONICAL_DIR` in `scripts/test_canonical.sh`). 
+Once you have the transferred canonical image, place it in `all_sequences/${NAME}/${EXP_NAME}_control` (i.e. `CANONICAL_DIR` in `scripts/test_canonical.sh`).
 
 Then run
 
@@ -147,7 +161,7 @@ The transferred results can be seen in `results/all_sequences/{NAME}/{EXP_NAME}_
 
 ```bibtex
 @article{ouyang2023codef,
-      title={CoDeF: Content Deformation Fields for Temporally Consistent Video Processing}, 
+      title={CoDeF: Content Deformation Fields for Temporally Consistent Video Processing},
       author={Hao Ouyang and Qiuyu Wang and Yuxi Xiao and Qingyan Bai and Juntao Zhang and Kecheng Zheng and Xiaowei Zhou and Qifeng Chen and Yujun Shen},
       journal={arXiv preprint arXiv:2308.07926},
       year={2023}
