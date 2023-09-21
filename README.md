@@ -1,172 +1,40 @@
-# CoDeF: Content Deformation Fields for Temporally Consistent Video Processing
 
-<img src='docs/teaser.gif'></img>
+### 总述
+只完成了送分题
 
-[Hao Ouyang](https://ken-ouyang.github.io/)\*, [Qiuyu Wang](https://github.com/qiuyu96/)\*, [Yuxi Xiao](https://henry123-boy.github.io/)\*, [Qingyan Bai](https://scholar.google.com/citations?user=xUMjxi4AAAAJ&hl=en), [Juntao Zhang](https://github.com/JordanZh), [Kecheng Zheng](https://scholar.google.com/citations?user=hMDQifQAAAAJ), [Xiaowei Zhou](https://xzhou.me/),
-[Qifeng Chen](https://cqf.io/)&#8224;, [Yujun Shen](https://shenyujun.github.io/)&#8224; (*equal contribution, &#8224;corresponding author)
+### 主要开发工作
 
-#### [Project Page](https://qiuyu96.github.io/CoDeF/) | [Paper](https://arxiv.org/abs/2308.07926) | [High-Res Translation Demo](https://ezioby.github.io/CoDeF_Demo/) | [Colab](https://colab.research.google.com/github/camenduru/CoDeF-colab/blob/main/CoDeF_colab.ipynb)
+#### 开发工作的难点
 
-<!-- Abstract: *This work presents the content deformation field **CoDeF** as a new type of video representation, which consists of a canonical content field aggregating the static contents in the entire video and a temporal deformation field recording the transformations from the canonical image (i.e., rendered from the canonical content field) to each individual frame along the time axis. Given a target video, these two fields are jointly optimized to reconstruct it through a carefully tailored rendering pipeline. We also introduce some decent regularizations into the optimization process, urging the canonical content field to inherit semantics (e.g., the object shape) from the video. With such a design, **CoDeF** naturally supports lifting image algorithms to videos, in the sense that one can apply an image algorithm to the canonical image and effortlessly propagate the outcomes to the entire video with the aid of the temporal deformation field. We experimentally show that **CoDeF** is able to lift image-to-image translation to video-to-video translation and lift keypoint detection to keypoint tracking without any training. More importantly, thanks to our lifting strategy that deploys the algorithms on only one image, we achieve superior cross-frame consistency in translated videos compared to existing video-to-video translation approaches, and even manage to track non-rigid objects like water and smog.* -->
+### 开发与优化过程
 
-## Requirements
+### 优化效果
 
-The codebase is tested on
+### Bug报告（可选）
 
-* Ubuntu 20.04
-* Python 3.10
-* [PyTorch](https://pytorch.org/) 2.0.0
-* [PyTorch Lightning](https://www.pytorchlightning.ai/index.html) 2.0.2
-* 1 NVIDIA GPU (RTX A6000) with CUDA version 11.7. (Other GPUs are also suitable, and 10GB GPU memory is sufficient to run our code.)
+### 送分题答案（可选）
 
-To use video visualizer, please install `ffmpeg` via
+如果你做了送分题，请把答案写在这里。
 
-```shell
-sudo apt-get install ffmpeg
-```
+(1) 
+Input: Born in north-east France, Soyer trained as a
 
-For additional Python libraries, please install with
+Output:  chef and eventually became a chef at a
 
-```shell
-pip install -r requirements.txt
-```
+(2)
+[09/21/2023-07:16:37] [TRT-LLM] [I] HF Generated :
 
-Our code also depends on [tiny-cuda-nn](https://github.com/NVlabs/tiny-cuda-nn).
-See [this repository](https://github.com/NVlabs/tiny-cuda-nn#pytorch-extension)
-for Pytorch extension install instructions.
+[09/21/2023-07:16:37] [TRT-LLM] [I]  Input : ['(CNN)James Best, best known for his portrayal of bumbling sheriff Rosco P. Coltrane on TV\'s "The Dukes of Hazzard," died Monday after a brief illness. He was 88. Best died in hospice in Hickory, North Carolina, of complications from pneumonia, said Steve Latshaw, a longtime friend and Hollywood colleague. Although he\'d been a busy actor for decades in theater and in Hollywood, Best didn\'t become famous until 1979, when "The Dukes of Hazzard\'s" cornpone charms began beaming into millions of American homes almost every Friday night. For seven seasons, Best\'s Rosco P. Coltrane chased the moonshine-running Duke boys back and forth across the back roads of fictitious Hazzard County, Georgia, although his "hot pursuit" usually ended with him crashing his patrol car. Although Rosco was slow-witted and corrupt, Best gave him a childlike enthusiasm that got laughs and made him endearing. His character became known for his distinctive "kew-kew-kew" chuckle and for goofy catchphrases such as "cuff \'em and stuff \'em!" upon making an arrest. Among the most popular shows on TV in the early \'80s, "The Dukes of Hazzard" ran until 1985 and spawned TV movies, an animated series and video games. Several of Best\'s "Hazzard" co-stars paid tribute to the late actor on social media. "I laughed and learned more from Jimmie in one hour than from anyone else in a whole year," co-star John Schneider, who played Bo Duke, said on Twitter. "Give Uncle Jesse my love when you see him dear friend." "Jimmy Best was the most constantly creative person I have ever known," said Ben Jones, who played mechanic Cooter on the show, in a Facebook post. "Every minute of his long life was spent acting, writing, producing, painting, teaching, fishing, or involved in another of his life\'s many passions." Born Jewel Guy on July 26, 1926, in Powderly, Kentucky, Best was orphaned at 3 and adopted by Armen and Essa Best, who renamed him James and raised him in rural Indiana. Best served in the Army during World War II before launching his acting career. In the 1950s and 1960s, he accumulated scores of credits, playing a range of colorful supporting characters in such TV shows as "The Twilight Zone," "Bonanza," "The Andy Griffith Show" and "Gunsmoke." He later appeared in a handful of Burt Reynolds\' movies, including "Hooper" and "The End." But Best will always be best known for his "Hazzard" role, which lives on in reruns. "Jimmie was my teacher, mentor, close friend and collaborator for 26 years," Latshaw said. "I directed two of his feature films, including the recent \'Return of the Killer Shrews,\' a sequel he co-wrote and was quite proud of as he had made the first one more than 50 years earlier." People we\'ve lost in 2015 . CNN\'s Stella Chan contributed to this story.']
 
-## Data
+[09/21/2023-07:16:37] [TRT-LLM] [I]
+ Reference : ['James Best, who played the sheriff on "The Dukes of Hazzard," died Monday at 88 .\n"Hazzard" ran from 1979 to 1985 and was among the most popular shows on TV .']
 
-### Provided data
+[09/21/2023-07:16:37] [TRT-LLM] [I]
+ Output : [[' James Best died of pneumonia.']]
 
-We have provided some videos [here](https://drive.google.com/file/d/1cKZF6ILeokCjsSAGBmummcQh0uRGaC_F/view?usp=sharing) for quick test. Please download and unzip the data and put them in the root directory. More videos can be downloaded [here](https://drive.google.com/file/d/10Msz37MpjZQFPXlDWCZqrcQjhxpQSvCI/view?usp=sharing).
+[09/21/2023-07:16:37] [TRT-LLM] [I] ---------------------------------------------------------
 
-### Customize your own data
 
-We segement video sequences using [SAM-Track](https://github.com/z-x-yang/Segment-and-Track-Anything). Once you obtain the mask files, place them in the folder `all_sequences/{YOUR_SEQUENCE_NAME}/{YOUR_SEQUENCE_NAME}_masks`. Next, execute the following command:
+### 经验与体会（可选）
 
-```shell
-cd data_preprocessing
-python preproc_mask.py
-```
-
-We extract optical flows of video sequences using [RAFT](https://github.com/princeton-vl/RAFT). To get started, please follow the instructions provided [here](https://github.com/princeton-vl/RAFT#demos) to download their pretrained model. Once downloaded, place the model in the `data_preprocessing/RAFT/models` folder. After that, you can execute the following command:
-
-```shell
-cd data_preprocessing/RAFT
-./run_raft.sh
-```
-
-Remember to update the sequence name and root directory in both `data_preprocessing/preproc_mask.py` and `data_preprocessing/RAFT/run_raft.sh` accordingly.
-
-After obtaining the files, please organize your own data as follows:
-
-```
-CoDeF
-│
-└─── all_sequences
-    │
-    └─── NAME1
-           └─ NAME1
-           └─ NAME1_masks_0 (optional)
-           └─ NAME1_masks_1 (optional)
-           └─ NAME1_flow (optional)
-           └─ NAME1_flow_confidence (optional)
-    │
-    └─── NAME2
-           └─ NAME2
-           └─ NAME2_masks_0 (optional)
-           └─ NAME2_masks_1 (optional)
-           └─ NAME2_flow (optional)
-           └─ NAME2_flow_confidence (optional)
-    │
-    └─── ...
-```
-
-## Pretrained checkpoints
-
-You can download checkpoints pre-trained on the provided videos via
-
-| Sequence Name | Config |                           Download                           |
-| :-------- | :----: | :----------------------------------------------------------: |
-| beauty_0 | configs/beauty_0/base.yaml |  [Google drive link](https://drive.google.com/file/d/11SWfnfDct8bE16802PyqYJqsU4x6ACn8/view?usp=sharing) |
-| beauty_1 | configs/beauty_1/base.yaml |  [Google drive link](https://drive.google.com/file/d/1bSK0ChbPdURWGLdtc9CPLkN4Tfnng51k/view?usp=sharing) |
-| white_smoke      | configs/white_smoke/base.yaml |  [Google drive link](https://drive.google.com/file/d/1QOBCDGV2hHwxq4eL1E_45z5zhZ-wTJR7/view?usp=sharing) |
-| lemon_hit      | configs/lemon_hit/base.yaml |  [Google drive link](https://drive.google.com/file/d/140ctcLbv7JTIiy53MuCYtI4_zpIvRXzq/view?usp=sharing) |
-| scene_0      | configs/scene_0/base.yaml |  [Google drive link](https://drive.google.com/file/d/1abOdREarfw1DGscahOJd2gZf1Xn_zN-F/view?usp=sharing) |
-
-And organize files as follows
-
-```
-CoDeF
-│
-└─── ckpts/all_sequences
-    │
-    └─── NAME1
-        │
-        └─── EXP_NAME (base)
-            │
-            └─── NAME1.ckpt
-    │
-    └─── NAME2
-        │
-        └─── EXP_NAME (base)
-            │
-            └─── NAME2.ckpt
-    |
-    └─── ...
-```
-
-## Train a new model
-
-```shell
-./scripts/train_multi.sh
-```
-
-where
-* `GPU`: Decide which GPU to train on;
-* `NAME`: Name of the video sequence;
-* `EXP_NAME`: Name of the experiment;
-* `ROOT_DIRECTORY`: Directory of the input video sequence;
-* `MODEL_SAVE_PATH`: Path to save the checkpoints;
-* `LOG_SAVE_PATH`: Path to save the logs;
-* `MASK_DIRECTORY`: Directory of the preprocessed masks (optional);
-* `FLOW_DIRECTORY`: Directory of the preprocessed optical flows (optional);
-
-Please check configuration files in ``configs/``, and you can always add your own model config.
-
-## Test reconstruction <a id="anchor"></a>
-
-```shell
-./scripts/test_multi.sh
-```
-After running the script, the reconstructed videos can be found in `results/all_sequences/{NAME}/{EXP_NAME}`, along with the canonical image.
-
-## Test video translation
-
-After obtaining the canonical image through [this step](#anchor), use your preferred text prompts to transfer it using [ControlNet](https://github.com/lllyasviel/ControlNet).
-Once you have the transferred canonical image, place it in `all_sequences/${NAME}/${EXP_NAME}_control` (i.e. `CANONICAL_DIR` in `scripts/test_canonical.sh`).
-
-Then run
-
-```shell
-./scripts/test_canonical.sh
-```
-
-The transferred results can be seen in `results/all_sequences/{NAME}/{EXP_NAME}_transformed`.
-
-*Note*: The `canonical_wh` option in the configuration file should be set with caution, usually a little larger than `img_wh`, as it determines the field of view of the canonical image.
-
-### BibTeX
-
-```bibtex
-@article{ouyang2023codef,
-      title={CoDeF: Content Deformation Fields for Temporally Consistent Video Processing},
-      author={Hao Ouyang and Qiuyu Wang and Yuxi Xiao and Qingyan Bai and Juntao Zhang and Kecheng Zheng and Xiaowei Zhou and Qifeng Chen and Yujun Shen},
-      journal={arXiv preprint arXiv:2308.07926},
-      year={2023}
-}
-```
-
-### Acknowledgements
-We thank [camenduru](https://github.com/camenduru) for providing the [colab demo](https://github.com/camenduru/CoDeF-colab).
+服务器链接外网不太流畅，部署代理也没成功，开发比较麻烦
